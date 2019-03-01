@@ -23,7 +23,7 @@ public class Bienvenida extends AppCompatActivity {
                 Intent intent = new Intent(Bienvenida.this, MainActivity.class);
                 startActivity(intent);
             }
-        }, 1000); // Esto de aqui sera para que la pantalla aparezca un tiempo determinado y luego pase a la siguiente pantalla.
+        }, 2000); // Esto de aqui sera para que la pantalla aparezca un tiempo determinado y luego pase a la siguiente pantalla.
 
 
     }
