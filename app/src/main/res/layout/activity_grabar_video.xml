@@ -8,7 +8,7 @@
     tools:context=".GrabarVideo">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewGrabarVideo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
@@ -22,16 +22,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textViewReproducirVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:text="@string/reproducir"
+        android:textAlignment="center"
+        android:textColor="@color/blancoGris"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReproducirGrabado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGrabarVideo" />
+
     <Button
         android:id="@+id/buttonGrabarVideo"
         android:layout_width="150dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="379dp"
+        android:layout_marginBottom="79dp"
         android:background="@drawable/grabar_off"
         android:onClick="TomarVideo"
+        app:layout_constraintBottom_toTopOf="@+id/textViewReproducirVideo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGrabarVideo" />
+
+    <Button
+        android:id="@+id/buttonReproducirGrabado"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="109dp"
+        android:background="@drawable/grabar_on"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewReproducirVideo" />
 
 </android.support.constraint.ConstraintLayout>

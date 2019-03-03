@@ -24,12 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-
-    }
-
     public void onResume() {
         super.onResume();
 
@@ -49,32 +43,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }
-
-    public void onRestart() {
-        super.onRestart();
-
-    }
-
-
-    public void onPause() {
-        super.onPause();
-
-    }
-
-    public void onStop() {
-        super.onStop();
-
-    }
-
-    public void onDestroy() {
-        super.onDestroy();
-
-        /*
-        Toast toast = Toast.makeText(this, "Ventana 1 Estoy en onDestroy", Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.TOP | Gravity.LEFT, 0, 1400);
-        toast.show();
-        Log.i(AVISO, getLocalClassName() + ".onDestroy;"); */
     }
 
 }

@@ -14,5 +14,7 @@
 
     <string name="iniciaGrabar">Graba Tu Video</string>
 
+    <string name="reproducir">Reproducir la Grabación</string>
+
 
 </resources>
